@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Survey Form</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="survey.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <h1 id="title">Candidate Survey form</h1>
+        
+            <p id="description">Thank you for taking the time to apply for this company</p>
+        </header>
+
+        <div class="form">
+            <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+                <label class="label" id="name-label">Name</label><br>
+                <input
+                class="edit"
+                    type="text"
+                    id="name"
+                    name="name" 
+                    placeholder="Enter Your Name"
+                    required
+                    >
+                <br><label class="label" id="email-label">Email</label><br>
+                <input
+                    type="email" class="edit" required id="email" name="email" placeholder="Enter Your Email">
+                <br><label class="label" id="number-label">Age</label><br>
+                <input  id="number" class="edit" required  type="number" min="20" max="30" placeholder="Enter your Age">
+                <br><label class="label" for="select">Select the Role to apply in it.</label><br>
+                <select id="dropdown" >
+                    <option>Select Job Role</option>
+                    <option>Design Engineer</option>
+                    <option>Production Engineer</option>
+                    <option>R&D Engineer</option>
+                </select >
+                <br><label  class="ex">Gender</label><br>
+                <input id="male" required type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <label class="ex">Select the Skills you have in the following.</label><br>
+                <label for="excel"><input required type="checkbox" id="excel" name="skill" value="excel"> Excel</label><br>
+                <label for="CAD"><input type="checkbox" id="CAD" name="skill" value="CAD">CAD</label><br>
+                <label for="Solidworks"><input type="checkbox" id="Solidworks" name="skill" value="Solidworks">Solidworks</label><br>
+                <label for="Matlab"><input type="checkbox" id="Matlab" name="skill" value="Matlab">Matlab</label><br>
+
+                <label class="ex">Describe Yourself or Give us a Brief Intruduction.</label><br>
+                <textarea id="intro" name="intro"  placeholder="Write about yourself..........."></textarea><br>
+
+                <input   id="submit" type="submit" name="submit" value="Submit">
+
+
+
+
+
+            </form>
+
+
+
+        </div>
+    </body>
+
+</html>
